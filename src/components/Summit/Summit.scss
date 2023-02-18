@@ -1,5 +1,20 @@
+.summit-container {
+    display: flex; 
+    flex-direction: column;
+
+    @media all and (min-width: 950px) {
+        flex-direction: row;  
+    }
+}
+
 .summit-content {
     padding: 40px; 
+    // width: 80%; 
+    // width: 100%; 
+
+    @media all and (min-width: 950px) {
+        width: 80%;   
+    }
 }
 
 .header {
@@ -144,14 +159,17 @@
             .setting-header {
                 display: flex;
                 align-items: center;
-
                 justify-content: center;
+
+                h4 {
+                    display: inline-block;
+                    margin: 0;
+                    margin-left: 10px;
+                }
             }
 
-            .setting-header h4 {
-                display: inline-block;
-                margin: 0;
-                margin-left: 10px;
+            p {
+                text-align: center;
             }
         }
 
@@ -174,10 +192,18 @@
                 .setting-header {
                     justify-content: left;
                 }
+
+                p {
+                    text-align: left; 
+                }
             }
 
             .add {
                 margin-top: 10px; 
+
+                p {
+                    text-align: center !important; 
+                }
             }
         }
     }
@@ -194,19 +220,22 @@
             border-radius: 4px;
             padding: 20px 10px;
             margin-bottom: 20px;
-        }
 
-        .experience-header {
-            display: flex;
-            align-items: center;
+            .experience-header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-            justify-content: center;
-        }
+                h4 {
+                    display: inline-block;
+                    margin: 0;
+                    margin-left: 10px;
+                }
+            }
 
-        .experience-header h4 {
-            display: inline-block;
-            margin: 0;
-            margin-left: 10px;
+            p {
+                text-align: center;
+            }
         }
     }
 
@@ -222,6 +251,10 @@
 
                 .experience-header {
                     justify-content: left;
+                }
+
+                p {
+                    text-align: left;
                 }
             }
         }

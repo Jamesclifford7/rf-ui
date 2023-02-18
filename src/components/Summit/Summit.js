@@ -5,10 +5,12 @@ import PersonLogo from '../images/PersonLogo.png'
 import Arrow from '../images/logic-arrow.png'
 import Circle from '../images/add-circle-outline.png'
 import Computer from '../images/computer.png'
+import NavBar from '../NavBar/NavBar'
 
 export default function Summit() {
     return (
         <div className='summit-container'>
+            <NavBar />
             <div className='summit-content'>
                 <section className='header'>
                     <div className='left'>
